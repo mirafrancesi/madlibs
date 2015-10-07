@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Madlib Game</title>
-</head>
-<body>
-    <p>A man named {{ person }} went {{ verb }}ing in a {{ color }} {{ noun }}. He did it {{ adjective }}ly.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}<title>Madlib Game</title>{% endblock %}
+    {%block body%}<p>A woman named {{ person }} went {{ verb }}ing in a {{ color }} {{ noun }}. He did it {{ adjective }}ly.</p>
+{% endblock %}

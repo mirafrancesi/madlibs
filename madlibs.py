@@ -40,8 +40,8 @@ def show_game_form():
 
 @app.route('/madlib')
 def show_madlib():
-    color = request.args.get("color")
     person = request.args.get("person")
+    color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
     verb = choice(request.args.getlist("verb"))

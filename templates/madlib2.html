@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Madlib Game</title>
-</head>
-<body>
-    <p> {{ color }} {{ noun }} went {{ verb }}ing in Central Park. When {{ person }} {{ adjective }}ly galloped by.</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}<title>Madlib Game</title>{% endblock %}
+    {%block body%}{{ color }} {{ noun }} went {{ verb }}ing in Central Park. When {{ person }} {{ adjective }}ly galloped by.</p>
+{% endblock %}
